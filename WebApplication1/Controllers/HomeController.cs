@@ -12,26 +12,21 @@ namespace WebApplication1.Controllers
     public class HomeController : Controller
     {
 
-        private readonly dbRep db;
+        IDataRepository dataRepository;
 
         public HomeController()
         {
             var ConnectionString = "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=TarifsContext;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|\\TarifsContext.mdf";
-            this.db = new dbRep(ConnectionString);
+            //this.dataRepository = new DBRepository(ConnectionString);
+            this.dataRepository = new ListRepository();
         }
         public ActionResult Index()
         {
-
-        
-            var flatsTarifs = db.GetTarifsFlat();
-            return View(flatsTarifs);
+            return View(this.dataRepository.getTarifsFlat());
         }
         public ActionResult Internet()
         {
-            var data = db.GetTarifs();
- 
-       
-            return View(data);
+            return View(this.dataRepository.getTarifs());
         }
         public ActionResult LK()
         {
@@ -48,14 +43,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-
-                db.CreateRequest(new Models.Request()
-                {
-                    FIO = request.FIO,
-                    Phone = request.Phone,
-                    Email = request.Email,
-
-                });
+                this.dataRepository.createRequest(request);
                 return View();
             }
             catch (Exception ex)

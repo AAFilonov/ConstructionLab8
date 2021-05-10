@@ -10,6 +10,6 @@ namespace WebApplication1
 
         IEnumerable<Models.Tarif> getTarifs();
         IEnumerable<Models.Tarif> getTarifsFlat();
-        void  createRequest(Models.Request);
+        void  createRequest(Models.Request request);
     }
 }
