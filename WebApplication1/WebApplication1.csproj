@@ -261,6 +261,7 @@
     <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="DB\ConnectionBase.cs" />
     <Compile Include="DB\dbRep.cs" />
+    <Compile Include="DB\IDataRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
