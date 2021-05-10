@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Tarif]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Title] NVARCHAR(50) NOT NULL,
+	[Descr] NVARCHAR(200) NOT NULL
+)

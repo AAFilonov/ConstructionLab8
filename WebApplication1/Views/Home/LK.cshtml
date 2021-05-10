@@ -1,0 +1,279 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MyProvider.com - Личный кабинет </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 3rem;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .pricing-header {
+            max-width: 700px;
+        }
+
+        .card-deck .card {
+            min-width: 220px;
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        .navbar {
+            padding: .5rem 1rem;
+        }
+
+
+        .content {
+            margin-left: 10rem;
+            margin-right: 10rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+        }
+
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        footer {
+            color: rgba(255, 255, 255, .75);
+        }
+
+            footer a {
+                color: rgba(255, 255, 255, .5);
+            }
+    </style>
+
+</head>
+<!-- Modal -->
+<div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="requestModalLabel">Оставить заявку</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body container">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-6 order-3">
+                            <input type="email" class="form-control" id="exampleInputEmail"
+                                   placeholder="Электронная почта">
+                        </div>
+                        <div class="form-group col-6 order-1">
+                            <input type="text" class="form-control" id="exampleInputName" placeholder="Имя">
+                        </div>
+                        <div class="form-group col-6 order-2">
+                            <input type="tel" class="form-control" id="exampleInputName" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="row  justify-content-end ">
+                        <!-- <button type="submit" class="btn btn-outline-primary col-auto  mx-3">Отправить</button>-->
+                        <a class="btn btn-outline-primary col-auto  mx-3" href="request send.html">
+                            Отправить
+                        </a>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<body>
+    <!-- Nav -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+
+
+                <a class="navbar-brand" href="#">myProvider.com</a>
+                <ul class="navbar-nav ml-left">
+                    <li class="nav-item"> <a class="nav-link" href="/Home/Index/"> Главная</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наши услуги</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="/Home/Internet/">Интернет</a>
+                            <a class="dropdown-item" href="#">ТВ</a>
+                            <a class="dropdown-item" href="#">Интернет+ТВ</a>
+                            <a class="dropdown-item" href="#">Телефония</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"> Бизнес-Предложения</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Home/LK/"> Личный кабинет</a></li>
+
+                </ul>
+                <button class="btn btn-outline-success ml-auto mr-5 my-sm-0"> Стать Клиентом</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, maiores. Quisquam eaque excepturi ad
+                officiis voluptatem quo at facere temporibus vero laudantium in ea fugit, architecto necessitatibus,
+                eos, modi omnis repellendus consectetur eum. Assumenda iusto, commodi quos nisi tempora adipisci
+                blanditiis eos nostrum cumque eum laborum facilis accusantium totam alias ea, magni voluptatibus at.
+                Obcaecati dolor ipsum mollitia harum modi porro beatae quos amet perspiciatis vel magni, velit officia
+                accusamus aliquam repellendus sunt architecto, exercitationem deserunt consequatur sed! Veniam
+                voluptate, voluptas, nobis aliquam voluptatum in consequatur culpa praesentium numquam dolorum incidunt
+                deleniti id ea dicta totam quisquam, tempore asperiores! Fugiat dolorum libero vitae cupiditate, quasi
+                repellendus, rerum delectus suscipit at iure ut quis pariatur sit facere assumenda necessitatibus,
+                dolorem veniam! Corporis eos aut dolorum aperiam nobis officia quidem quasi repudiandae obcaecati nihil
+                temporibus consequuntur dignissimos earum neque, incidunt nostrum, tempore, ad recusandae soluta est
+                autem quae nesciunt. Pariatur, animi omnis.
+            </div>
+            <div class="col-md-4 col-sm-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, maiores. Quisquam eaque excepturi ad
+                officiis voluptatem quo at facere temporibus vero laudantium in ea fugit, architecto necessitatibus,
+                eos, modi omnis repellendus consectetur eum. Assumenda iusto, commodi quos nisi tempora adipisci
+                blanditiis eos nostrum cumque eum laborum facilis accusantium totam alias ea, magni voluptatibus at.
+                Obcaecati dolor ipsum mollitia harum modi porro beatae quos amet perspiciatis vel magni, velit officia
+                accusamus aliquam repellendus sunt architecto, exercitationem deserunt consequatur sed! Veniam
+                voluptate, voluptas, nobis aliquam voluptatum in consequatur culpa praesentium numquam dolorum incidunt
+                deleniti id ea dicta totam quisquam, tempore asperiores! Fugiat dolorum libero vitae cupiditate, quasi
+                repellendus, rerum delectus suscipit at iure ut quis pariatur sit facere assumenda necessitatibus,
+                dolorem veniam! Corporis eos aut dolorum aperiam nobis officia quidem quasi repudiandae obcaecati nihil
+                temporibus consequuntur dignissimos earum neque, incidunt nostrum, tempore, ad recusandae soluta est
+                autem quae nesciunt. Pariatur, animi omnis.
+            </div>
+            <div class="col-md-4 col-sm-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, maiores. Quisquam eaque excepturi ad
+                officiis voluptatem quo at facere temporibus vero laudantium in ea fugit, architecto necessitatibus,
+                eos, modi omnis repellendus consectetur eum. Assumenda iusto, commodi quos nisi tempora adipisci
+                blanditiis eos nostrum cumque eum laborum facilis accusantium totam alias ea, magni voluptatibus at.
+                Obcaecati dolor ipsum mollitia harum modi porro beatae quos amet perspiciatis vel magni, velit officia
+                accusamus aliquam repellendus sunt architecto, exercitationem deserunt consequatur sed! Veniam
+                voluptate, voluptas, nobis aliquam voluptatum in consequatur culpa praesentium numquam dolorum incidunt
+                deleniti id ea dicta totam quisquam, tempore asperiores! Fugiat dolorum libero vitae cupiditate, quasi
+                repellendus, rerum delectus suscipit at iure ut quis pariatur sit facere assumenda necessitatibus,
+                dolorem veniam! Corporis eos aut dolorum aperiam nobis officia quidem quasi repudiandae obcaecati nihil
+                temporibus consequuntur dignissimos earum neque, incidunt nostrum, tempore, ad recusandae soluta est
+                autem quae nesciunt. Pariatur, animi omnis.
+            </div>
+            <div class="col-md-4 col-sm-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, maiores. Quisquam eaque excepturi ad
+                officiis voluptatem quo at facere temporibus vero laudantium in ea fugit, architecto necessitatibus,
+                eos, modi omnis repellendus consectetur eum. Assumenda iusto, commodi quos nisi tempora adipisci
+                blanditiis eos nostrum cumque eum laborum facilis accusantium totam alias ea, magni voluptatibus at.
+                Obcaecati dolor ipsum mollitia harum modi porro beatae quos amet perspiciatis vel magni, velit officia
+                accusamus aliquam repellendus sunt architecto, exercitationem deserunt consequatur sed! Veniam
+                voluptate, voluptas, nobis aliquam voluptatum in consequatur culpa praesentium numquam dolorum incidunt
+                deleniti id ea dicta totam quisquam, tempore asperiores! Fugiat dolorum libero vitae cupiditate, quasi
+                repellendus, rerum delectus suscipit at iure ut quis pariatur sit facere assumenda necessitatibus,
+                dolorem veniam! Corporis eos aut dolorum aperiam nobis officia quidem quasi repudiandae obcaecati nihil
+                temporibus consequuntur dignissimos earum neque, incidunt nostrum, tempore, ad recusandae soluta est
+                autem quae nesciunt. Pariatur, animi omnis.
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid py-5 px-3 footer bg-dark">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li>7-800-341-34-34</li>
+                    <li>help@myprovider.com</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Услуги</h6>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Интернет + ТВ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Интернет </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Цифровое ТВ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Кабельное ТВ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6>MyProvider.com</h6>
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Новости </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Вакансии</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Прочее</h6>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Бизнес-Предложения</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Наши услуги </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Личный кабиенет</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <p class="">
+                    © АО «Что-там Холдинг» 2011-2021
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

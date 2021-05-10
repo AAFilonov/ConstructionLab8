@@ -1,0 +1,236 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MyProvider.com - Интернет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            padding-top: 3rem;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .pricing-header {
+            max-width: 700px;
+        }
+
+        .card-deck .card {
+            min-width: 220px;
+        }
+
+        .border-top {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .box-shadow {
+            box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+
+        .navbar {
+            padding: .5rem 1rem;
+        }
+
+
+        .content {
+            margin-left: 10rem;
+            margin-right: 10rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+            min-height:500px;
+        }
+
+        .card-deck {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        footer {
+            color: rgba(255, 255, 255, .75);
+        }
+
+            footer a {
+                color: rgba(255, 255, 255, .5);
+            }
+
+
+        .flyer {
+            min-height: 500px;
+            padding: 5rem;
+            padding-top: 7rem;
+            background-color: rgba(245, 239, 209, 0.856)
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            height: 100px;
+            width: 100px;
+            background-image: none;
+        }
+
+            .carousel-control-next-icon:after {
+                content: '>';
+                font-size: 55px;
+                color: black;
+            }
+
+            .carousel-control-prev-icon:after {
+                content: '<';
+                font-size: 55px;
+                color: black;
+            }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Nav -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+
+
+                <a class="navbar-brand" href="#">myProvider.com</a>
+                <ul class="navbar-nav ml-left">
+                    <li class="nav-item"> <a class="nav-link" href="/Home/Index/"> Главная</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наши услуги</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown03">
+                            <a class="dropdown-item" href="/Home/Internet/">Интернет</a>
+                            <a class="dropdown-item" href="#">ТВ</a>
+                            <a class="dropdown-item" href="#">Интернет+ТВ</a>
+                            <a class="dropdown-item" href="#">Телефония</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="#"> Бизнес-Предложения</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/Home/LK/"> Личный кабинет</a></li>
+
+                </ul>
+                <button class="btn btn-outline-success ml-auto mr-5 my-sm-0"> Стать Клиентом</button>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="content container">
+
+
+        <div class="row">
+            <form class="col-4">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">
+                        We'll never share your email with anyone
+                        else.
+                    </small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <!--  <button type="submit" class="btn btn-primary">Submit</button>-->
+                <a class="btn btn-lg btn-block btn-outline-primary" href="request send.html">
+                    Отправить
+                </a>
+            </form>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid py-5 px-3 footer bg-dark">
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li>7-800-341-34-34</li>
+                    <li>help@myprovider.com</li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Услуги</h6>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Интернет + ТВ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Интернет </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Цифровое ТВ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Кабельное ТВ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6>MyProvider.com</h6>
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">О компании</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Новости </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Вакансии</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Прочее</h6>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Бизнес-Предложения</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Наши услуги </a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Личный кабиенет</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <p class="">
+                    © АО «Что-там Холдинг» 2011-2021
+                </p>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
